@@ -5,6 +5,8 @@
 
 <head>
   <meta charset="utf-8">
+  <script type="text/javascript"
+   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
   
   <title>三角函数方法整理 - Alex D.</title>
@@ -45,7 +47,11 @@
 <link rel="stylesheet" href="/css/post.css">
 
   
-<meta name="generator" content="Hexo 5.3.0"></head>
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.3.0"></head>
     <body>
         <nav id="theme-nav">
     <div class="inner">
@@ -103,8 +109,8 @@
 
     <div class="content">
         <script type="text/javascript" src="/js/src/bai.js"></script>
-
-<h1 id="三角函数方法整理"><a href="#三角函数方法整理" class="headerlink" title="三角函数方法整理"></a>三角函数方法整理</h1><blockquote>
+<h1 id="三角函数方法整理">三角函数方法整理</h1>
+<blockquote>
 <p>数学是一门巧妙的学科，应该有足够的时间给我们做出最巧妙的方法</p>
 <p>By JinChang Yang(Andy Y.)</p>
 </blockquote>
@@ -113,48 +119,53 @@
 <p><strong>是否发现别人做题速度比你快一个世纪？</strong></p>
 <p>如果是，那你就还是个人。</p>
 <a id="more"></a>
-
 <p>本文包含大量的“选择”，配合左端大纲观看效果更佳。</p>
 <p>“DY！你居然拿这个东西来糊弄我们！”</p>
 <p><del>我的道德可是尤其的高尚</del></p>
-<h1 id="化简求值题"><a href="#化简求值题" class="headerlink" title="化简求值题"></a>化简求值题</h1><p>一般遇到这种题答案都是三分之兀的倍数。</p>
-<h2 id="用一个等式求一个等式的值"><a href="#用一个等式求一个等式的值" class="headerlink" title="用一个等式求一个等式的值"></a>用一个等式求一个等式的值</h2><p>况1:老师仁慈：直接变形，加加减减即可</p>
-<p>况2:老师不仁慈：Van能公式强求$\displaystyle \tan \theta $</p>
-<h2 id="多个等式的求值题"><a href="#多个等式的求值题" class="headerlink" title="多个等式的求值题"></a>多个等式的求值题</h2><ul>
-<li>出现$\displaystyle \cos( \alpha \pm\beta )$、$\displaystyle \sin( \alpha \pm\beta )$之类的：<ul>
+<h1 id="化简求值题">化简求值题</h1>
+<p>一般遇到这种题答案都是三分之兀的倍数。</p>
+<h2 id="用一个等式求一个等式的值">用一个等式求一个等式的值</h2>
+<p>况1:老师仁慈：直接变形，加加减减即可</p>
+<p>况2:老师不仁慈：Van能公式强求$$</p>
+<h2 id="多个等式的求值题">多个等式的求值题</h2>
+<ul>
+<li>出现<span class="math inline">\(\displaystyle \cos( \alpha \pm\beta )\)</span>、<span class="math inline">\(\displaystyle \sin( \alpha \pm\beta )\)</span>之类的：
+<ul>
 <li>打开来，加减（和差化积）</li>
 <li>当上式子中的内容不和谐时，想想能不能整体带入（注意范围）</li>
-</ul>
-</li>
-<li>出现大量乘积形式，如$\displaystyle \sin \alpha \sin \beta $等<ul>
+</ul></li>
+<li>出现大量乘积形式，如$$等
+<ul>
 <li>先将每个式子尽可能积化和差化得友好（若可以）</li>
 <li>将两式乘，sin两倍角公式</li>
 <li>将两式除，尽可能减少未知量</li>
-</ul>
-</li>
-<li>出现大量不友好的单独的三角函数的和与差<ul>
+</ul></li>
+<li>出现大量不友好的单独的三角函数的和与差
+<ul>
 <li>乘一乘常常会有意想不到的惊喜</li>
 <li>和差化积</li>
-<li>强求$\displaystyle \alpha 和\beta$的三角函数值（勇士）</li>
-<li>小技巧：已知$\displaystyle \sin \alpha+\sin \beta和\cos \alpha+\cos \beta$可以快速求出$\tan (\alpha+\beta)/2$</li>
-</ul>
-</li>
+<li>强求<span class="math inline">\(\displaystyle \alpha 和\beta\)</span>的三角函数值（勇士）</li>
+<li>小技巧：已知<span class="math inline">\(\displaystyle \sin \alpha+\sin \beta和\cos \alpha+\cos \beta\)</span>可以快速求出<span class="math inline">\(\tan (\alpha+\beta)/2\)</span></li>
+</ul></li>
 </ul>
 <p>在三角形内可以用180转化。</p>
-<h2 id="具体数值的求值题"><a href="#具体数值的求值题" class="headerlink" title="具体数值的求值题"></a>具体数值的求值题</h2><ul>
+<h2 id="具体数值的求值题">具体数值的求值题</h2>
+<ul>
 <li>找到合适的角，合一变形</li>
 <li>分子、分母复杂，可以分开考虑</li>
 <li>可以以特殊角为基准，把其他角用特殊角和未知角的和差关系来表示</li>
-<li>$\displaystyle \sin2\alpha$的裂开</li>
+<li><span class="math inline">\(\displaystyle \sin2\alpha\)</span>的裂开</li>
 <li>三角函数积的形式，可以尝试使用和差化积找到特殊角降次</li>
-<li>二倍角的通分技巧:$\displaystyle \frac{1}{\sin \alpha } +\frac{1}{\sin 2\alpha } =\frac{2\sin \alpha \cos \alpha +\sin \alpha }{\sin 2\alpha }$</li>
-<li>构造法<ul>
+<li>二倍角的通分技巧:<span class="math inline">\(\displaystyle \frac{1}{\sin \alpha } +\frac{1}{\sin 2\alpha } =\frac{2\sin \alpha \cos \alpha +\sin \alpha }{\sin 2\alpha }\)</span></li>
+<li>构造法
+<ul>
 <li>1、构造几何图形（见上次的三角函数公式“无名式”）</li>
 <li>2、构造方程组，如下图，一次性求两个式子</li>
+</ul></li>
 </ul>
-</li>
-</ul>
-<p><img src="https://tva1.sinaimg.cn/large/00831rSTly1gcunaxpm19j30mm03lq4z.jpg" alt="4CDBE555F4ABDA7E2FB364E22B74DC30"></p>
+<figure>
+<img src="https://tva1.sinaimg.cn/large/00831rSTly1gcunaxpm19j30mm03lq4z.jpg" alt="" /><figcaption>4CDBE555F4ABDA7E2FB364E22B74DC30</figcaption>
+</figure>
 <ul>
 <li>实在不行，三角爆算</li>
 </ul>
@@ -162,32 +173,35 @@
 <p>虽然我并不喜欢用脚做题，但是考试时不得不如此</p>
 <p>By JinChang Yang(Andy Y.)</p>
 </blockquote>
-<h2 id="证明题"><a href="#证明题" class="headerlink" title="证明题"></a>证明题</h2><ul>
+<h2 id="证明题">证明题</h2>
+<ul>
 <li>切化弦，弦化切，降次</li>
 <li>从目标找方向</li>
 <li>注意角的范围</li>
 <li>尽量不要积化和差，和差化积（大部分证明题用不到）</li>
 <li>不要忘了万能公式</li>
 </ul>
-<h2 id="函数大题"><a href="#函数大题" class="headerlink" title="函数大题"></a>函数大题</h2><p>$\displaystyle 化简\rightarrow 拆\rightarrow 降次\rightarrow 合一\rightarrow 换元二次函数或直接是三角函数$</p>
+<h2 id="函数大题">函数大题</h2>
+<p><span class="math inline">\(\displaystyle 化简\rightarrow 拆\rightarrow 降次\rightarrow 合一\rightarrow 换元二次函数或直接是三角函数\)</span></p>
 <p>一切问题只需要爆算，没有太多技巧。</p>
-<h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><ul>
+<h2 id="注意事项">注意事项</h2>
+<ul>
 <li>能代整体的代整体·，避免分类讨论</li>
 <li>三角换元注意范围</li>
 <li>cos容易写错，一定注意</li>
-<li>三  角  爆  算</li>
+<li>三 角 爆 算</li>
 <li>诱导公式不要忘了</li>
 </ul>
-<h1 id="解三角形"><a href="#解三角形" class="headerlink" title="解三角形"></a>解三角形</h1><p>其实两个公式掌握了就全部可以转化为求值题。</p>
-<h2 id="解的个数"><a href="#解的个数" class="headerlink" title="解的个数"></a>解的个数</h2><ul>
-<li><p>已知两角一边：正弦定理，仅有一个解</p>
-</li>
-<li><p>已知两边和其中一边的对角：正弦定理，分类讨论。（下表为已知A，a，b）</p>
-</li>
+<h1 id="解三角形">解三角形</h1>
+<p>其实两个公式掌握了就全部可以转化为求值题。</p>
+<h2 id="解的个数">解的个数</h2>
+<ul>
+<li><p>已知两角一边：正弦定理，仅有一个解</p></li>
+<li><p>已知两边和其中一边的对角：正弦定理，分类讨论。（下表为已知A，a，b）</p></li>
 </ul>
 <table>
 <thead>
-<tr>
+<tr class="header">
 <th></th>
 <th>A为锐角</th>
 <th>A为锐角</th>
@@ -195,39 +209,42 @@
 <th>A为钝角</th>
 </tr>
 </thead>
-<tbody><tr>
+<tbody>
+<tr class="odd">
 <td>关系式</td>
 <td>a=bsinA</td>
 <td>bsinA&lt;a&lt;b</td>
 <td>A&gt;=b</td>
 <td>a&gt;b</td>
 </tr>
-<tr>
+<tr class="even">
 <td>解的个数</td>
 <td>1</td>
 <td>2</td>
 <td>1</td>
 <td>1</td>
 </tr>
-</tbody></table>
+</tbody>
+</table>
 <p><em>由于语法关系，无法插入图形。</em></p>
 <ul>
 <li>已知三边，用余弦定理，仅有一解</li>
 <li>已知两边和夹角，必有一解</li>
 </ul>
-<h2 id="面积公式"><a href="#面积公式" class="headerlink" title="面积公式"></a>面积公式</h2><p>$\displaystyle S=\frac{ah}{2}$</p>
-<p>$\displaystyle S=\frac{1}{2} ab\sin C$</p>
-<p>$\displaystyle S=2R^{2}\sin A\sin B\sin C$</p>
-<p>$\displaystyle S=\frac{abc}{4R}$</p>
-<p>$\displaystyle S=\frac{1}{2} Cr$</p>
-<p>$\displaystyle S=\sqrt{p( p-a)( p-b)( p-c)}$</p>
-<h2 id="实际问题中常见的概念"><a href="#实际问题中常见的概念" class="headerlink" title="实际问题中常见的概念"></a>实际问题中常见的概念</h2><ul>
-<li><p>俯角、仰角：A看B的仰角=B看A的俯角</p>
-</li>
-<li><p>方位角：注意哪里偏哪里，不要看错了</p>
-</li>
+<h2 id="面积公式">面积公式</h2>
+<p><span class="math inline">\(\displaystyle S=\frac{ah}{2}\)</span></p>
+<p><span class="math inline">\(\displaystyle S=\frac{1}{2} ab\sin C\)</span></p>
+<p><span class="math inline">\(\displaystyle S=2R^{2}\sin A\sin B\sin C\)</span></p>
+<p><span class="math inline">\(\displaystyle S=\frac{abc}{4R}\)</span></p>
+<p><span class="math inline">\(\displaystyle S=\frac{1}{2} Cr\)</span></p>
+<p><span class="math inline">\(\displaystyle S=\sqrt{p( p-a)( p-b)( p-c)}\)</span></p>
+<h2 id="实际问题中常见的概念">实际问题中常见的概念</h2>
+<ul>
+<li><p>俯角、仰角：A看B的仰角=B看A的俯角</p></li>
+<li><p>方位角：注意哪里偏哪里，不要看错了</p></li>
 </ul>
-<h2 id="常用方法-注意事项"><a href="#常用方法-注意事项" class="headerlink" title="常用方法/注意事项"></a>常用方法/注意事项</h2><ul>
+<h2 id="常用方法注意事项">常用方法/注意事项</h2>
+<ul>
 <li>用正弦定理和余弦定理在同一个三角形中构建方程</li>
 <li>用余弦定理在两个三角形中关于一条相等的边构造方程</li>
 <li>齐次式用正弦定理可以边角互相转化</li>

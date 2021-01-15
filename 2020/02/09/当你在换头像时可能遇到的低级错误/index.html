@@ -5,6 +5,8 @@
 
 <head>
   <meta charset="utf-8">
+  <script type="text/javascript"
+   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
   
   <title>当你在换头像时可能遇到的低级错误 - Alex D.</title>
@@ -45,7 +47,11 @@
 <link rel="stylesheet" href="/css/post.css">
 
   
-<meta name="generator" content="Hexo 5.3.0"></head>
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.3.0"></head>
     <body>
         <nav id="theme-nav">
     <div class="inner">
@@ -103,20 +109,17 @@
 
     <div class="content">
         <script type="text/javascript" src="/js/src/bai.js"></script>
-
 <p>又是一篇低创文章</p>
 <p>但是十分符合我低级错误犯的多的风格</p>
 <p>看看我解决一个低级错误的艰辛历程😂</p>
 <a id="more"></a>
-
-
-
 <blockquote>
 <p>换头像可真是一项快乐的事情</p>
 <p>然后我就踩坑了</p>
 </blockquote>
 <p>首先，如果要设置自己的侧边栏头像，只需要在主题配置文件里的“Side Bar Avatar”里面更改图片的路径就好了。</p>
-<h1 id="一号坑"><a href="#一号坑" class="headerlink" title="一号坑"></a>一号坑</h1><p>路径有三种写法：</p>
+<h1 id="一号坑">一号坑</h1>
+<p>路径有三种写法：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;images&#x2F;avatar.png</span><br><span class="line">images&#x2F;avatar.png</span><br><span class="line">.&#x2F;images&#x2F;avatar.png</span><br></pre></td></tr></table></figure>
 <p>然而，这三种写法（至少我）极其容易弄错</p>
 <p><del>我太菜了</del></p>
@@ -126,9 +129,10 @@
 <p>然而桌这么多有什么用？</p>
 <p>就是它其实在这个配置文件中并不是这么理解的！</p>
 <p>它默认从主题文件夹的source里开始找，也就是说</p>
-<p><a target="_blank" rel="noopener" href="https://imgchr.com/i/1h1sbV"><img src="https://s2.ax1x.com/2020/02/09/1h1sbV.png" alt="1h1sbV.png"></a></p>
+<p><a target="_blank" rel="noopener" href="https://imgchr.com/i/1h1sbV"><img src="https://s2.ax1x.com/2020/02/09/1h1sbV.png" alt="1h1sbV.png" /></a></p>
 <p>直接写/images/avatar.png ，然后直接往里丢就好了！</p>
-<h1 id="坑点二"><a href="#坑点二" class="headerlink" title="坑点二"></a>坑点二</h1><p>  /images/avatar.png</p>
+<h1 id="坑点二">坑点二</h1>
+<p>/images/avatar.png</p>
 <p>↑这里有个空格</p>
 <p>好吧，犯了那么多低级错误，终于搞定了</p>
 <p><del>我绝对不会告诉你用图床会更方便</del></p>

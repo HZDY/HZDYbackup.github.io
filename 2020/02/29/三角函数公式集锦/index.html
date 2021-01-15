@@ -5,6 +5,8 @@
 
 <head>
   <meta charset="utf-8">
+  <script type="text/javascript"
+   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
   
   <title>三角函数公式整理 - Alex D.</title>
@@ -45,7 +47,11 @@
 <link rel="stylesheet" href="/css/post.css">
 
   
-<meta name="generator" content="Hexo 5.3.0"></head>
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.3.0"></head>
     <body>
         <nav id="theme-nav">
     <div class="inner">
@@ -103,89 +109,111 @@
 
     <div class="content">
         <script type="text/javascript" src="/js/src/bai.js"></script>
-
 <blockquote>
 <p>三角无难题</p>
 <p>——陈洁</p>
 </blockquote>
 <blockquote>
-<p>本文与<a target="_blank" rel="noopener" href="https://pistol.city/">Andy Y.</a>合作完成</p>
+<p>本文与<a target="_blank" rel="noopener" href="https://pistol.city">Andy Y.</a>合作完成</p>
 <p>（一个人打那么多LaTeX会死的）</p>
 </blockquote>
-<h1 id="基础公式"><a href="#基础公式" class="headerlink" title="基础公式"></a>基础公式</h1><h2 id="和差角公式"><a href="#和差角公式" class="headerlink" title="和差角公式"></a>和差角公式</h2><blockquote>
+<h1 id="基础公式">基础公式</h1>
+<h2 id="和差角公式">和差角公式</h2>
+<blockquote>
 <p><em>本 尊</em></p>
 </blockquote>
-<p>$\displaystyle \sin( \alpha \pm \beta ) =\sin \alpha \cos \beta \pm \cos \alpha \sin \beta $</p>
-<p>$\displaystyle \cos( \alpha \pm \beta ) =\cos \alpha \cos \beta \mp \sin \alpha \sin \beta $</p>
-<a id="more"></a>
-
-
-
-<h2 id="二倍角公式"><a href="#二倍角公式" class="headerlink" title="二倍角公式"></a>二倍角公式</h2><blockquote>
+<p><span class="math display">\[ \displaystyle \sin( \alpha \pm \beta ) =\sin \alpha \cos \beta \pm \cos \alpha \sin \beta \]</span></p>
+<p><span class="math display">\[ \displaystyle \cos( \alpha \pm \beta ) =\cos \alpha \cos \beta \mp \sin \alpha \sin \beta \]</span></p>
+<h2 id="二倍角公式">二倍角公式</h2>
+<blockquote>
 <p>有时逆用比正用还多</p>
 </blockquote>
-<h3 id="公式本体"><a href="#公式本体" class="headerlink" title="公式本体"></a>公式本体</h3><p>$\displaystyle \sin 2\alpha =2\sin \alpha \cos \alpha $</p>
-<p>$\displaystyle \cos 2\alpha =\cos^{2} \alpha -\sin^{2} \alpha =2\cos^{2} \alpha -1=1-2\sin^{2} \alpha $</p>
-<p>$\displaystyle \tan 2\alpha =\frac{2\tan \alpha }{1-\tan^{2} \alpha }$</p>
-<h3 id="衍生出的升幂降幂公式"><a href="#衍生出的升幂降幂公式" class="headerlink" title="衍生出的升幂降幂公式"></a>衍生出的升幂降幂公式</h3><p>$\displaystyle \sin^{2} \alpha =\frac{1-\cos 2\alpha }{2}$</p>
-<p>$\displaystyle \cos^{2} \alpha =\frac{\cos 2\alpha -1}{2}$</p>
-<h2 id="和差化积"><a href="#和差化积" class="headerlink" title="和差化积"></a>和差化积</h2><p>$\displaystyle \sin \alpha +\sin \beta =2\sin\frac{\alpha +\beta }{2}\cos\frac{\alpha -\beta }{2}$</p>
-<p>$\displaystyle \cos \alpha +\cos \beta =2\cos\frac{\alpha +\beta }{2}\cos\frac{\alpha -\beta }{2}$</p>
-<p>$\displaystyle \tan \alpha \pm \tan \beta =\frac{\sin( \alpha \pm \beta )}{\cos \alpha \cos \beta }$</p>
-<h2 id="积化和差"><a href="#积化和差" class="headerlink" title="积化和差"></a>积化和差</h2><p>$\sin \alpha \sin \beta =\frac{1}{2} [\cos (\alpha -\beta )-\cos (\alpha +\beta )]$</p>
-<p>$\cos \alpha \cos \beta =\frac{1}{2} [\cos (\alpha -\beta )+\cos (\alpha +\beta )]$</p>
-<p>$\sin \alpha \cos \beta =\frac{1}{2} [\sin (\alpha -\beta )+\sin (\alpha +\beta )]$</p>
-<h2 id="辅助角公式"><a href="#辅助角公式" class="headerlink" title="辅助角公式"></a>辅助角公式</h2><blockquote>
+<h3 id="公式本体">公式本体</h3>
+<p><span class="math display">\[ \displaystyle \sin 2\alpha =2\sin \alpha \cos \alpha \]</span></p>
+<p><span class="math display">\[\displaystyle \cos 2\alpha =\cos^{2} \alpha -\sin^{2} \alpha =2\cos^{2} \alpha -1=1-2\sin^{2} \alpha \]</span></p>
+<p><span class="math inline">\(\displaystyle \tan 2\alpha =\frac{2\tan \alpha }{1-\tan^{2} \alpha }\)</span></p>
+<h3 id="衍生出的升幂降幂公式">衍生出的升幂降幂公式</h3>
+<p><span class="math inline">\(\displaystyle \sin^{2} \alpha =\frac{1-\cos 2\alpha }{2}\)</span></p>
+<p><span class="math inline">\(\displaystyle \cos^{2} \alpha =\frac{\cos 2\alpha -1}{2}\)</span></p>
+<h2 id="和差化积">和差化积</h2>
+<p><span class="math inline">\(\displaystyle \sin \alpha +\sin \beta =2\sin\frac{\alpha +\beta }{2}\cos\frac{\alpha -\beta }{2}\)</span></p>
+<p><span class="math inline">\(\displaystyle \cos \alpha +\cos \beta =2\cos\frac{\alpha +\beta }{2}\cos\frac{\alpha -\beta }{2}\)</span></p>
+<p><span class="math inline">\(\displaystyle \tan \alpha \pm \tan \beta =\frac{\sin( \alpha \pm \beta )}{\cos \alpha \cos \beta }\)</span></p>
+<h2 id="积化和差">积化和差</h2>
+<p><span class="math inline">\(\sin \alpha \sin \beta =\frac{1}{2} [\cos (\alpha -\beta )-\cos (\alpha +\beta )]\)</span></p>
+<p><span class="math inline">\(\cos \alpha \cos \beta =\frac{1}{2} [\cos (\alpha -\beta )+\cos (\alpha +\beta )]\)</span></p>
+<p><span class="math inline">\(\sin \alpha \cos \beta =\frac{1}{2} [\sin (\alpha -\beta )+\sin (\alpha +\beta )]\)</span></p>
+<h2 id="辅助角公式">辅助角公式</h2>
+<blockquote>
 <p>遇到1，根号3或者两个1要敏感</p>
 </blockquote>
-<h3 id="公式"><a href="#公式" class="headerlink" title="公式"></a>公式</h3><p>$\displaystyle a\sin \alpha +b\cos \alpha =\sqrt{a^{2} +b^{2}}\left(\frac{a}{\sqrt{a^{2} +b^{2}}}\sin \alpha +\frac{b}{\sqrt{a^{2} +b^{2}}}\cos \alpha \right)$</p>
-<p>令$\displaystyle \phi =\arccos\frac{a}{\sqrt{a^{2} +b^{2}}} =\arcsin\frac{b}{\sqrt{a^{2} +b^{2}}}$</p>
-<p>$则原式=\sqrt{a^{2} +b^{2}} (\sin \alpha \cos \phi +\cos \alpha \sin \phi )$</p>
-<p>$\ \ \ \ \ \ \ \ \ \ \ \ =\sqrt{a^{2} +b^{2}}\sin (\alpha +\phi )$</p>
-<h3 id="常见结论"><a href="#常见结论" class="headerlink" title="常见结论"></a>常见结论</h3><p>①$\displaystyle \sin \alpha \pm \cos \alpha =\sqrt{2}\sin\left( \alpha \pm \frac{\pi }{4}\right)$</p>
-<p>②$\displaystyle \cos \alpha \pm \sin \alpha =\sqrt{2}\cos\left( \alpha \pm \frac{\pi }{4}\right)$</p>
-<p>③$\displaystyle \sin \alpha \pm \sqrt{3}\cos \alpha =2\sin\left( \alpha \pm \frac{\pi }{3}\right)$</p>
-<h2 id="万能公式"><a href="#万能公式" class="headerlink" title="万能公式"></a>万能公式</h2><blockquote>
+<h3 id="公式">公式</h3>
+<p><span class="math inline">\(\displaystyle a\sin \alpha +b\cos \alpha =\sqrt{a^{2} +b^{2}}\left(\frac{a}{\sqrt{a^{2} +b^{2}}}\sin \alpha +\frac{b}{\sqrt{a^{2} +b^{2}}}\cos \alpha \right)\)</span></p>
+<p>令<span class="math inline">\(\displaystyle \phi =\arccos\frac{a}{\sqrt{a^{2} +b^{2}}} =\arcsin\frac{b}{\sqrt{a^{2} +b^{2}}}\)</span></p>
+<p><span class="math inline">\(则原式=\sqrt{a^{2} +b^{2}} (\sin \alpha \cos \phi +\cos \alpha \sin \phi )\)</span></p>
+<p><span class="math inline">\(\ \ \ \ \ \ \ \ \ \ \ \ =\sqrt{a^{2} +b^{2}}\sin (\alpha +\phi )\)</span></p>
+<h3 id="常见结论">常见结论</h3>
+<p>①<span class="math inline">\(\displaystyle \sin \alpha \pm \cos \alpha =\sqrt{2}\sin\left( \alpha \pm \frac{\pi }{4}\right)\)</span></p>
+<p>②<span class="math inline">\(\displaystyle \cos \alpha \pm \sin \alpha =\sqrt{2}\cos\left( \alpha \pm \frac{\pi }{4}\right)\)</span></p>
+<p>③<span class="math inline">\(\displaystyle \sin \alpha \pm \sqrt{3}\cos \alpha =2\sin\left( \alpha \pm \frac{\pi }{3}\right)\)</span></p>
+<h2 id="万能公式">万能公式</h2>
+<blockquote>
 <p>常规运算中很少用到，用于化同名</p>
 </blockquote>
-<p>$\displaystyle 设t=\tan\frac{\alpha }{2} ,则\sin \alpha =\frac{2t}{1+t^{2}} ;\cos \alpha =\frac{1-t^{2}}{1+t^{2}} ;\tan \alpha =\frac{2t}{1-t^{2}}$</p>
-<h2 id="无名式"><a href="#无名式" class="headerlink" title="无名式"></a>无名式</h2><blockquote>
+<p><span class="math inline">\(\displaystyle 设t=\tan\frac{\alpha }{2} ,则\sin \alpha =\frac{2t}{1+t^{2}} ;\cos \alpha =\frac{1-t^{2}}{1+t^{2}} ;\tan \alpha =\frac{2t}{1-t^{2}}\)</span></p>
+<h2 id="无名式">无名式</h2>
+<blockquote>
 <p>大大节约运算时间</p>
 </blockquote>
-<p>$\cos\frac{\pi }{2k+1} +\cos\frac{3\pi }{2k+1} +\cdots +\cos\frac{(2k-1)\pi }{2k+1} =\frac{1}{2}$</p>
-<p>$\cos\frac{2\pi }{2k+1} +\cos\frac{4\pi }{2k+1} +\cdots +\cos\frac{2k\pi }{2k+1} =-\frac{1}{2}$</p>
-<h1 id="“变用”公式"><a href="#“变用”公式" class="headerlink" title="“变用”公式"></a>“变用”公式</h1><h2 id="常用变形-1"><a href="#常用变形-1" class="headerlink" title="常用变形#1"></a>常用变形#1</h2><h3 id="公式："><a href="#公式：" class="headerlink" title="公式："></a>公式：</h3><p>$\displaystyle 1+\cos \alpha =2\cos^{2}\frac{\alpha }{2}$</p>
-<p>$\displaystyle 1-\cos \alpha =2\sin^{2}\frac{\alpha }{2}$</p>
-<h3 id="举个例子："><a href="#举个例子：" class="headerlink" title="举个例子："></a>举个例子：</h3><p>$\displaystyle 若\ 2\sin^{2} \alpha =1+\cos\alpha ,且\alpha \neq k\pi ( k\in \mathbb{Z}) ,求\tan\frac{\alpha }{2}$</p>
+<p><span class="math inline">\(\cos\frac{\pi }{2k+1} +\cos\frac{3\pi }{2k+1} +\cdots +\cos\frac{(2k-1)\pi }{2k+1} =\frac{1}{2}\)</span></p>
+<p><span class="math inline">\(\cos\frac{2\pi }{2k+1} +\cos\frac{4\pi }{2k+1} +\cdots +\cos\frac{2k\pi }{2k+1} =-\frac{1}{2}\)</span></p>
+<h1 id="变用公式">“变用”公式</h1>
+<h2 id="常用变形1">常用变形#1</h2>
+<h3 id="公式-1">公式：</h3>
+<p><span class="math inline">\(\displaystyle 1+\cos \alpha =2\cos^{2}\frac{\alpha }{2}\)</span></p>
+<p><span class="math inline">\(\displaystyle 1-\cos \alpha =2\sin^{2}\frac{\alpha }{2}\)</span></p>
+<h3 id="举个例子">举个例子：</h3>
+<p><span class="math inline">\(\displaystyle 若\ 2\sin^{2} \alpha =1+\cos\alpha ,且\alpha \neq k\pi ( k\in \mathbb{Z}) ,求\tan\frac{\alpha }{2}\)</span></p>
 <p>解答如下：</p>
-<p>$\displaystyle 2\cdot 2\sin\frac{\alpha }{2}\cos\frac{\alpha }{2} =2\cos^{2}\frac{\alpha }{2}$</p>
-<p>$\displaystyle 2\sin\frac{\alpha }{2} =\cos\frac{\alpha }{2}$</p>
-<p>$\displaystyle \because \alpha \neq k\pi ( k\in \mathbb{Z})$</p>
-<p>$\displaystyle \therefore \cos\frac{\alpha }{2} \neq 0$</p>
-<p>$\displaystyle \therefore \tan\frac{\alpha }{2} =\frac{1}{2}$</p>
-<h2 id="常用变形-2"><a href="#常用变形-2" class="headerlink" title="常用变形#2"></a>常用变形#2</h2><h3 id="公式：-1"><a href="#公式：-1" class="headerlink" title="公式："></a>公式：</h3><p>$\displaystyle 1\pm \sin \alpha =\left(\cos\frac{\alpha }{2} \pm \sin\frac{\alpha }{2}\right)^{2}$</p>
-<p>We’ve tried our best but didn’t find any example for this :(</p>
-<h2 id="常用变形-3"><a href="#常用变形-3" class="headerlink" title="常用变形#3"></a>常用变形#3</h2><h3 id="公式-1"><a href="#公式-1" class="headerlink" title="公式"></a>公式</h3><p>$\displaystyle m+n\tan \alpha =\frac{m\cos \alpha +n\sin \alpha }{\cos \alpha }$</p>
-<h3 id="举个例子：-1"><a href="#举个例子：-1" class="headerlink" title="举个例子："></a>举个例子：</h3><p>求值：$\displaystyle \sin 50° \left( 1+\sqrt{3}\tan 10° \right) .$</p>
-<p>解：原式$\displaystyle =\sin 50° \times \frac{\cos 10° +\sqrt{3}\sin 10° }{\cos 10° }$</p>
-<p> $\displaystyle =\cos 40° \cdot \frac{2(\sin 30° \cos 10° +\cos 30° \sin 10° )}{\cos 10° }$</p>
-<p>$\displaystyle =\frac{\cos 40° \cdot 2\sin 40° }{\cos 10° }$</p>
-<p>$\displaystyle =\frac{\sin 80° }{\sin 80° } =1$</p>
-<h2 id="常用变形-4"><a href="#常用变形-4" class="headerlink" title="常用变形#4"></a>常用变形#4</h2><h3 id="公式-2"><a href="#公式-2" class="headerlink" title="公式:"></a>公式:</h3><p>$\displaystyle 1+\sin \alpha +\cos \alpha =2\cos^{2}\frac{\alpha }{2} +2\sin\frac{\alpha }{2}\cos\frac{\alpha }{2} =2\cos\frac{\alpha }{2}\left(\cos\frac{\alpha }{2} +\sin\frac{\alpha }{2}\right)$<br>###举个例子：<br>$\displaystyle 化简：\frac{( 1+\sin \alpha +\cos \alpha )\left(\cos\frac{\alpha }{2} -\sin\frac{\alpha }{2}\right)}{\sqrt{2+2\cos \alpha }}$</p>
-<p>$\displaystyle 原式=\frac{2\cos\frac{\alpha }{2}\left(\cos\frac{\alpha }{2} +\sin\frac{\alpha }{2}\right)\left(\cos\frac{\alpha }{2} -\sin\frac{\alpha }{2}\right)}{\sqrt{2} \times \sqrt{2\cos^{2}\frac{\alpha }{2}}}$</p>
-<p>$\displaystyle \ \ \ \ \ \ \ \ =\frac{\cos\frac{\alpha }{2}\cos \alpha }{|\cos\frac{\alpha }{2} |}$</p>
-<p>$\displaystyle \ \ \ \ \ \ \ \ =\begin{cases}<br>\cos \alpha  &amp; \alpha \in [ -\pi +4k\pi ,\pi +4k\pi ) ,k\in \mathbb{Z}\<br>-\cos \alpha  &amp; \alpha \in [ \pi +4k\pi ,3\pi +4k\pi ) ,k\in \mathbb{Z}<br>\end{cases}$</p>
-<h2 id="常用变形5"><a href="#常用变形5" class="headerlink" title="常用变形5:"></a>常用变形5:</h2><h3 id="公式-3"><a href="#公式-3" class="headerlink" title="公式"></a>公式</h3><p>$\displaystyle \frac{1+\tan \alpha }{1-\tan \alpha } =\frac{\tan 45° +\tan \alpha }{1-\tan 45° \tan \alpha } =\tan( 45° +\alpha )$<br>###举个例子<br>$\displaystyle \frac{1+\tan 15° }{1-\tan 15° }$<br>(太简单了，不加过程)</p>
-<h2 id="常用变形-6"><a href="#常用变形-6" class="headerlink" title="常用变形#6"></a>常用变形#6</h2><h3 id="没有公式"><a href="#没有公式" class="headerlink" title="没有公式"></a>没有公式</h3><p>秘技：<strong>从 结 构 入 手</strong></p>
-<h3 id="举个例子"><a href="#举个例子" class="headerlink" title="举个例子"></a>举个例子</h3><p>已知$\displaystyle \alpha ,\ \beta \in \left( 0,\ \frac{\pi }{2}\right) ,$且$\displaystyle \sin \beta =\cos( \alpha +\beta )\sin \alpha ,$求证：$\displaystyle \tan \beta =\frac{\sin 2\alpha }{2+2\sin^{2} \alpha }$</p>
-<p>证：$\sin \beta =\cos \alpha \cos \beta \sin \alpha -\sin \alpha \sin \beta \sin \alpha$</p>
-<p>$\displaystyle \tan \beta =\sin \alpha \cos \alpha -\sin^{2} \alpha \tan \beta$</p>
-<p>$\displaystyle \tan \beta \left( 1+\sin^{2} \alpha \right) =\sin \alpha \cos \alpha$</p>
-<p>$\displaystyle \tan \beta =\frac{\sin \alpha \cos \alpha }{1+\sin^{2} \alpha } =\frac{\sin 2\alpha }{2+2\sin^{2} \alpha }$</p>
+<p><span class="math inline">\(\displaystyle 2\cdot 2\sin\frac{\alpha }{2}\cos\frac{\alpha }{2} =2\cos^{2}\frac{\alpha }{2}\)</span></p>
+<p><span class="math inline">\(\displaystyle 2\sin\frac{\alpha }{2} =\cos\frac{\alpha }{2}\)</span></p>
+<p><span class="math inline">\(\displaystyle \because \alpha \neq k\pi ( k\in \mathbb{Z})\)</span></p>
+<p><span class="math inline">\(\displaystyle \therefore \cos\frac{\alpha }{2} \neq 0\)</span></p>
+<p><span class="math inline">\(\displaystyle \therefore \tan\frac{\alpha }{2} =\frac{1}{2}\)</span></p>
+<h2 id="常用变形2">常用变形#2</h2>
+<h3 id="公式-2">公式：</h3>
+<p><span class="math inline">\(\displaystyle 1\pm \sin \alpha =\left(\cos\frac{\alpha }{2} \pm \sin\frac{\alpha }{2}\right)^{2}\)</span></p>
+<p>We've tried our best but didn't find any example for this :(</p>
+<h2 id="常用变形3">常用变形#3</h2>
+<h3 id="公式-3">公式</h3>
+<p><span class="math inline">\(\displaystyle m+n\tan \alpha =\frac{m\cos \alpha +n\sin \alpha }{\cos \alpha }\)</span></p>
+<h3 id="举个例子-1">举个例子：</h3>
+<p>求值：<span class="math inline">\(\displaystyle \sin 50° \left( 1+\sqrt{3}\tan 10° \right) .\)</span></p>
+<p>解：原式<span class="math inline">\(\displaystyle =\sin 50° \times \frac{\cos 10° +\sqrt{3}\sin 10° }{\cos 10° }\)</span></p>
+<p><span class="math inline">\(\displaystyle =\cos 40° \cdot \frac{2(\sin 30° \cos 10° +\cos 30° \sin 10° )}{\cos 10° }\)</span></p>
+<p><span class="math inline">\(\displaystyle =\frac{\cos 40° \cdot 2\sin 40° }{\cos 10° }\)</span></p>
+<p><span class="math inline">\(\displaystyle =\frac{\sin 80° }{\sin 80° } =1\)</span></p>
+<h2 id="常用变形4">常用变形#4</h2>
+<h3 id="公式-4">公式:</h3>
+<p><span class="math inline">\(\displaystyle 1+\sin \alpha +\cos \alpha =2\cos^{2}\frac{\alpha }{2} +2\sin\frac{\alpha }{2}\cos\frac{\alpha }{2} =2\cos\frac{\alpha }{2}\left(\cos\frac{\alpha }{2} +\sin\frac{\alpha }{2}\right)\)</span> ###举个例子： <span class="math inline">\(\displaystyle 化简：\frac{( 1+\sin \alpha +\cos \alpha )\left(\cos\frac{\alpha }{2} -\sin\frac{\alpha }{2}\right)}{\sqrt{2+2\cos \alpha }}\)</span></p>
+<p><span class="math inline">\(\displaystyle 原式=\frac{2\cos\frac{\alpha }{2}\left(\cos\frac{\alpha }{2} +\sin\frac{\alpha }{2}\right)\left(\cos\frac{\alpha }{2} -\sin\frac{\alpha }{2}\right)}{\sqrt{2} \times \sqrt{2\cos^{2}\frac{\alpha }{2}}}\)</span></p>
+<p><span class="math inline">\(\displaystyle \ \ \ \ \ \ \ \ =\frac{\cos\frac{\alpha }{2}\cos \alpha }{|\cos\frac{\alpha }{2} |}\)</span></p>
+<p><span class="math inline">\(\displaystyle \ \ \ \ \ \ \ \ =\begin{cases} \cos \alpha &amp; \alpha \in [ -\pi +4k\pi ,\pi +4k\pi ) ,k\in \mathbb{Z}\\ -\cos \alpha &amp; \alpha \in [ \pi +4k\pi ,3\pi +4k\pi ) ,k\in \mathbb{Z} \end{cases}\)</span></p>
+<h2 id="常用变形5">常用变形5:</h2>
+<h3 id="公式-5">公式</h3>
+<p><span class="math inline">\(\displaystyle \frac{1+\tan \alpha }{1-\tan \alpha } =\frac{\tan 45° +\tan \alpha }{1-\tan 45° \tan \alpha } =\tan( 45° +\alpha )\)</span> ###举个例子 <span class="math inline">\(\displaystyle \frac{1+\tan 15° }{1-\tan 15° }\)</span> (太简单了，不加过程)</p>
+<h2 id="常用变形6">常用变形#6</h2>
+<h3 id="没有公式">没有公式</h3>
+<p>秘技：<strong>从 结 构 入 手</strong> ### 举个例子</p>
+<p>已知<span class="math inline">\(\displaystyle \alpha ,\ \beta \in \left( 0,\ \frac{\pi }{2}\right) ,\)</span>且<span class="math inline">\(\displaystyle \sin \beta =\cos( \alpha +\beta )\sin \alpha ,\)</span>求证：<span class="math inline">\(\displaystyle \tan \beta =\frac{\sin 2\alpha }{2+2\sin^{2} \alpha }\)</span></p>
+<p>证：<span class="math inline">\(\sin \beta =\cos \alpha \cos \beta \sin \alpha -\sin \alpha \sin \beta \sin \alpha\)</span></p>
+<p><span class="math inline">\(\displaystyle \tan \beta =\sin \alpha \cos \alpha -\sin^{2} \alpha \tan \beta\)</span></p>
+<p><span class="math inline">\(\displaystyle \tan \beta \left( 1+\sin^{2} \alpha \right) =\sin \alpha \cos \alpha\)</span></p>
+<p><span class="math inline">\(\displaystyle \tan \beta =\frac{\sin \alpha \cos \alpha }{1+\sin^{2} \alpha } =\frac{\sin 2\alpha }{2+2\sin^{2} \alpha }\)</span></p>
 <p>证毕.</p>
-<hr>
+<hr />
 <p><strong>The End</strong></p>
-<hr>
+<hr />
 
     </div>
 

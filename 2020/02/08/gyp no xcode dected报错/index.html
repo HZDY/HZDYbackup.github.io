@@ -5,6 +5,8 @@
 
 <head>
   <meta charset="utf-8">
+  <script type="text/javascript"
+   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
   
   <title>gyp no xcode dected报错 - Alex D.</title>
@@ -45,7 +47,11 @@
 <link rel="stylesheet" href="/css/post.css">
 
   
-<meta name="generator" content="Hexo 5.3.0"></head>
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --><meta name="generator" content="Hexo 5.3.0"></head>
     <body>
         <nav id="theme-nav">
     <div class="inner">
@@ -104,10 +110,10 @@
     <div class="content">
         <p>在安装baidusitemap插件式，macOS版本高的用户可能碰到如下报错：</p>
 <blockquote>
-<h1 id="gyp-No-Xcode-or-CLT-version-detected"><a href="#gyp-No-Xcode-or-CLT-version-detected" class="headerlink" title="gyp: No Xcode or CLT version detected!"></a>gyp: No Xcode or CLT version detected!</h1></blockquote>
+<h1 id="gyp-no-xcode-or-clt-version-detected">gyp: No Xcode or CLT version detected!</h1>
+</blockquote>
 <p>原因很简单，缺了Xcode的cli插件，我们把它装上就好了。</p>
 <a id="more"></a>
-
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo xcode-select --install</span><br></pre></td></tr></table></figure>
 <p>执行完了好像还是不行？遇到如下报错：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">xcode-select: error: <span class="built_in">command</span> line tools are already installed, use <span class="string">&quot;Software Update&quot;</span> to install updates</span><br></pre></td></tr></table></figure>
