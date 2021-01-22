@@ -5,8 +5,8 @@
 
 <head>
   <meta charset="utf-8">
-  <script type="text/javascript"
-   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.css" integrity="sha384-qCEsSYDSH0x5I45nNW4oXemORUZnYFtPy/FqB/OjqxabTMW5HVaaH9USK4fN3goV" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.js" integrity="sha384-YFVvRUwgqxkAVN9bmAVLsKilmOKfQLyUx0ZlmDNs0aBUTsvMLnRxE3Km0NrZa0i9" crossorigin="anonymous"></script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-158797579-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -118,7 +118,7 @@
 
     <div class="content">
         <script type="text/javascript" src="/js/src/bai.js"></script>
-<h1 id="三角函数方法整理">三角函数方法整理</h1>
+<h1 id="三角函数方法整理"><a class="markdownIt-Anchor" href="#三角函数方法整理"></a> 三角函数方法整理</h1>
 <blockquote>
 <p>数学是一门巧妙的学科，应该有足够的时间给我们做出最巧妙的方法</p>
 <p>By JinChang Yang(Andy Y.)</p>
@@ -130,51 +130,53 @@
 <a id="more"></a>
 <p>本文包含大量的“选择”，配合左端大纲观看效果更佳。</p>
 <p>“DY！你居然拿这个东西来糊弄我们！”</p>
-<p><del>我的道德可是尤其的高尚</del></p>
-<h1 id="化简求值题">化简求值题</h1>
+<p><s>我的道德可是尤其的高尚</s></p>
+<h1 id="化简求值题"><a class="markdownIt-Anchor" href="#化简求值题"></a> 化简求值题</h1>
 <p>一般遇到这种题答案都是三分之兀的倍数。</p>
-<h2 id="用一个等式求一个等式的值">用一个等式求一个等式的值</h2>
+<h2 id="用一个等式求一个等式的值"><a class="markdownIt-Anchor" href="#用一个等式求一个等式的值"></a> 用一个等式求一个等式的值</h2>
 <p>况1:老师仁慈：直接变形，加加减减即可</p>
-<p>况2:老师不仁慈：Van能公式强求$$</p>
-<h2 id="多个等式的求值题">多个等式的求值题</h2>
+<p>况2:老师不仁慈：Van能公式强求$\displaystyle \tan \theta $</p>
+<h2 id="多个等式的求值题"><a class="markdownIt-Anchor" href="#多个等式的求值题"></a> 多个等式的求值题</h2>
 <ul>
-<li>出现<span class="math inline">\(\displaystyle \cos( \alpha \pm\beta )\)</span>、<span class="math inline">\(\displaystyle \sin( \alpha \pm\beta )\)</span>之类的：
+<li>出现<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mstyle scriptlevel="0" displaystyle="true"><mi>cos</mi><mo>⁡</mo><mo stretchy="false">(</mo><mi>α</mi><mo>±</mo><mi>β</mi><mo stretchy="false">)</mo></mstyle></mrow><annotation encoding="application/x-tex">\displaystyle \cos( \alpha \pm\beta )</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mop">cos</span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.0037em;">α</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">±</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.05278em;">β</span><span class="mclose">)</span></span></span></span>、<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mstyle scriptlevel="0" displaystyle="true"><mi>sin</mi><mo>⁡</mo><mo stretchy="false">(</mo><mi>α</mi><mo>±</mo><mi>β</mi><mo stretchy="false">)</mo></mstyle></mrow><annotation encoding="application/x-tex">\displaystyle \sin( \alpha \pm\beta )</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mop">sin</span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.0037em;">α</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">±</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.05278em;">β</span><span class="mclose">)</span></span></span></span>之类的：
 <ul>
 <li>打开来，加减（和差化积）</li>
 <li>当上式子中的内容不和谐时，想想能不能整体带入（注意范围）</li>
-</ul></li>
-<li>出现大量乘积形式，如$$等
+</ul>
+</li>
+<li>出现大量乘积形式，如$\displaystyle \sin \alpha \sin \beta $等
 <ul>
 <li>先将每个式子尽可能积化和差化得友好（若可以）</li>
 <li>将两式乘，sin两倍角公式</li>
 <li>将两式除，尽可能减少未知量</li>
-</ul></li>
+</ul>
+</li>
 <li>出现大量不友好的单独的三角函数的和与差
 <ul>
 <li>乘一乘常常会有意想不到的惊喜</li>
 <li>和差化积</li>
-<li>强求<span class="math inline">\(\displaystyle \alpha 和\beta\)</span>的三角函数值（勇士）</li>
-<li>小技巧：已知<span class="math inline">\(\displaystyle \sin \alpha+\sin \beta和\cos \alpha+\cos \beta\)</span>可以快速求出<span class="math inline">\(\tan (\alpha+\beta)/2\)</span></li>
-</ul></li>
+<li>强求<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mstyle scriptlevel="0" displaystyle="true"><mi>α</mi><mi mathvariant="normal">和</mi><mi>β</mi></mstyle></mrow><annotation encoding="application/x-tex">\displaystyle \alpha 和\beta</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault" style="margin-right:0.0037em;">α</span><span class="mord cjk_fallback">和</span><span class="mord mathdefault" style="margin-right:0.05278em;">β</span></span></span></span>的三角函数值（勇士）</li>
+<li>小技巧：已知<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mstyle scriptlevel="0" displaystyle="true"><mi>sin</mi><mo>⁡</mo><mi>α</mi><mo>+</mo><mi>sin</mi><mo>⁡</mo><mi>β</mi><mi mathvariant="normal">和</mi><mi>cos</mi><mo>⁡</mo><mi>α</mi><mo>+</mo><mi>cos</mi><mo>⁡</mo><mi>β</mi></mstyle></mrow><annotation encoding="application/x-tex">\displaystyle \sin \alpha+\sin \beta和\cos \alpha+\cos \beta</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.75119em;vertical-align:-0.08333em;"></span><span class="mop">sin</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.0037em;">α</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mop">sin</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.05278em;">β</span><span class="mord cjk_fallback">和</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mop">cos</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.0037em;">α</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mop">cos</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.05278em;">β</span></span></span></span>可以快速求出<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>tan</mi><mo>⁡</mo><mo stretchy="false">(</mo><mi>α</mi><mo>+</mo><mi>β</mi><mo stretchy="false">)</mo><mi mathvariant="normal">/</mi><mn>2</mn></mrow><annotation encoding="application/x-tex">\tan (\alpha+\beta)/2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mop">tan</span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.0037em;">α</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.05278em;">β</span><span class="mclose">)</span><span class="mord">/</span><span class="mord">2</span></span></span></span></li>
+</ul>
+</li>
 </ul>
 <p>在三角形内可以用180转化。</p>
-<h2 id="具体数值的求值题">具体数值的求值题</h2>
+<h2 id="具体数值的求值题"><a class="markdownIt-Anchor" href="#具体数值的求值题"></a> 具体数值的求值题</h2>
 <ul>
 <li>找到合适的角，合一变形</li>
 <li>分子、分母复杂，可以分开考虑</li>
 <li>可以以特殊角为基准，把其他角用特殊角和未知角的和差关系来表示</li>
-<li><span class="math inline">\(\displaystyle \sin2\alpha\)</span>的裂开</li>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mstyle scriptlevel="0" displaystyle="true"><mi>sin</mi><mo>⁡</mo><mn>2</mn><mi>α</mi></mstyle></mrow><annotation encoding="application/x-tex">\displaystyle \sin2\alpha</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.66786em;vertical-align:0em;"></span><span class="mop">sin</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">2</span><span class="mord mathdefault" style="margin-right:0.0037em;">α</span></span></span></span>的裂开</li>
 <li>三角函数积的形式，可以尝试使用和差化积找到特殊角降次</li>
-<li>二倍角的通分技巧:<span class="math inline">\(\displaystyle \frac{1}{\sin \alpha } +\frac{1}{\sin 2\alpha } =\frac{2\sin \alpha \cos \alpha +\sin \alpha }{\sin 2\alpha }\)</span></li>
+<li>二倍角的通分技巧:<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mstyle scriptlevel="0" displaystyle="true"><mfrac><mn>1</mn><mrow><mi>sin</mi><mo>⁡</mo><mi>α</mi></mrow></mfrac><mo>+</mo><mfrac><mn>1</mn><mrow><mi>sin</mi><mo>⁡</mo><mn>2</mn><mi>α</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>2</mn><mi>sin</mi><mo>⁡</mo><mi>α</mi><mi>cos</mi><mo>⁡</mo><mi>α</mi><mo>+</mo><mi>sin</mi><mo>⁡</mo><mi>α</mi></mrow><mrow><mi>sin</mi><mo>⁡</mo><mn>2</mn><mi>α</mi></mrow></mfrac></mstyle></mrow><annotation encoding="application/x-tex">\displaystyle \frac{1}{\sin \alpha } +\frac{1}{\sin 2\alpha } =\frac{2\sin \alpha \cos \alpha +\sin \alpha }{\sin 2\alpha }</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:2.00744em;vertical-align:-0.686em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.32144em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mop">sin</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.0037em;">α</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:2.00744em;vertical-align:-0.686em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.32144em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mop">sin</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">2</span><span class="mord mathdefault" style="margin-right:0.0037em;">α</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.03086em;vertical-align:-0.686em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.3448600000000002em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mop">sin</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">2</span><span class="mord mathdefault" style="margin-right:0.0037em;">α</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">2</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mop">sin</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.0037em;">α</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mop">cos</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.0037em;">α</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mop">sin</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.0037em;">α</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></li>
 <li>构造法
 <ul>
 <li>1、构造几何图形（见上次的三角函数公式“无名式”）</li>
 <li>2、构造方程组，如下图，一次性求两个式子</li>
-</ul></li>
 </ul>
-<figure>
-<img src="https://tva1.sinaimg.cn/large/00831rSTly1gcunaxpm19j30mm03lq4z.jpg" alt="" /><figcaption>4CDBE555F4ABDA7E2FB364E22B74DC30</figcaption>
-</figure>
+</li>
+</ul>
+<p><img src="https://tva1.sinaimg.cn/large/00831rSTly1gcunaxpm19j30mm03lq4z.jpg" alt="4CDBE555F4ABDA7E2FB364E22B74DC30" /></p>
 <ul>
 <li>实在不行，三角爆算</li>
 </ul>
@@ -182,7 +184,7 @@
 <p>虽然我并不喜欢用脚做题，但是考试时不得不如此</p>
 <p>By JinChang Yang(Andy Y.)</p>
 </blockquote>
-<h2 id="证明题">证明题</h2>
+<h2 id="证明题"><a class="markdownIt-Anchor" href="#证明题"></a> 证明题</h2>
 <ul>
 <li>切化弦，弦化切，降次</li>
 <li>从目标找方向</li>
@@ -190,27 +192,31 @@
 <li>尽量不要积化和差，和差化积（大部分证明题用不到）</li>
 <li>不要忘了万能公式</li>
 </ul>
-<h2 id="函数大题">函数大题</h2>
-<p><span class="math inline">\(\displaystyle 化简\rightarrow 拆\rightarrow 降次\rightarrow 合一\rightarrow 换元二次函数或直接是三角函数\)</span></p>
+<h2 id="函数大题"><a class="markdownIt-Anchor" href="#函数大题"></a> 函数大题</h2>
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mstyle scriptlevel="0" displaystyle="true"><mi mathvariant="normal">化</mi><mi mathvariant="normal">简</mi><mo>→</mo><mi mathvariant="normal">拆</mi><mo>→</mo><mi mathvariant="normal">降</mi><mi mathvariant="normal">次</mi><mo>→</mo><mi mathvariant="normal">合</mi><mi mathvariant="normal">一</mi><mo>→</mo><mi mathvariant="normal">换</mi><mi mathvariant="normal">元</mi><mi mathvariant="normal">二</mi><mi mathvariant="normal">次</mi><mi mathvariant="normal">函</mi><mi mathvariant="normal">数</mi><mi mathvariant="normal">或</mi><mi mathvariant="normal">直</mi><mi mathvariant="normal">接</mi><mi mathvariant="normal">是</mi><mi mathvariant="normal">三</mi><mi mathvariant="normal">角</mi><mi mathvariant="normal">函</mi><mi mathvariant="normal">数</mi></mstyle></mrow><annotation encoding="application/x-tex">\displaystyle 化简\rightarrow 拆\rightarrow 降次\rightarrow 合一\rightarrow 换元二次函数或直接是三角函数</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.36687em;vertical-align:0em;"></span><span class="mord cjk_fallback">化</span><span class="mord cjk_fallback">简</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.36687em;vertical-align:0em;"></span><span class="mord cjk_fallback">拆</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.36687em;vertical-align:0em;"></span><span class="mord cjk_fallback">降</span><span class="mord cjk_fallback">次</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.36687em;vertical-align:0em;"></span><span class="mord cjk_fallback">合</span><span class="mord cjk_fallback">一</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0em;vertical-align:0em;"></span><span class="mord cjk_fallback">换</span><span class="mord cjk_fallback">元</span><span class="mord cjk_fallback">二</span><span class="mord cjk_fallback">次</span><span class="mord cjk_fallback">函</span><span class="mord cjk_fallback">数</span><span class="mord cjk_fallback">或</span><span class="mord cjk_fallback">直</span><span class="mord cjk_fallback">接</span><span class="mord cjk_fallback">是</span><span class="mord cjk_fallback">三</span><span class="mord cjk_fallback">角</span><span class="mord cjk_fallback">函</span><span class="mord cjk_fallback">数</span></span></span></span></p>
 <p>一切问题只需要爆算，没有太多技巧。</p>
-<h2 id="注意事项">注意事项</h2>
+<h2 id="注意事项"><a class="markdownIt-Anchor" href="#注意事项"></a> 注意事项</h2>
 <ul>
 <li>能代整体的代整体·，避免分类讨论</li>
 <li>三角换元注意范围</li>
 <li>cos容易写错，一定注意</li>
-<li>三 角 爆 算</li>
+<li>三  角  爆  算</li>
 <li>诱导公式不要忘了</li>
 </ul>
-<h1 id="解三角形">解三角形</h1>
+<h1 id="解三角形"><a class="markdownIt-Anchor" href="#解三角形"></a> 解三角形</h1>
 <p>其实两个公式掌握了就全部可以转化为求值题。</p>
-<h2 id="解的个数">解的个数</h2>
+<h2 id="解的个数"><a class="markdownIt-Anchor" href="#解的个数"></a> 解的个数</h2>
 <ul>
-<li><p>已知两角一边：正弦定理，仅有一个解</p></li>
-<li><p>已知两边和其中一边的对角：正弦定理，分类讨论。（下表为已知A，a，b）</p></li>
+<li>
+<p>已知两角一边：正弦定理，仅有一个解</p>
+</li>
+<li>
+<p>已知两边和其中一边的对角：正弦定理，分类讨论。（下表为已知A，a，b）</p>
+</li>
 </ul>
 <table>
 <thead>
-<tr class="header">
+<tr>
 <th></th>
 <th>A为锐角</th>
 <th>A为锐角</th>
@@ -219,14 +225,14 @@
 </tr>
 </thead>
 <tbody>
-<tr class="odd">
+<tr>
 <td>关系式</td>
 <td>a=bsinA</td>
 <td>bsinA&lt;a&lt;b</td>
 <td>A&gt;=b</td>
 <td>a&gt;b</td>
 </tr>
-<tr class="even">
+<tr>
 <td>解的个数</td>
 <td>1</td>
 <td>2</td>
@@ -240,19 +246,29 @@
 <li>已知三边，用余弦定理，仅有一解</li>
 <li>已知两边和夹角，必有一解</li>
 </ul>
-<h2 id="面积公式">面积公式</h2>
-<p><span class="math inline">\(\displaystyle S=\frac{ah}{2}\)</span></p>
-<p><span class="math inline">\(\displaystyle S=\frac{1}{2} ab\sin C\)</span></p>
-<p><span class="math inline">\(\displaystyle S=2R^{2}\sin A\sin B\sin C\)</span></p>
-<p><span class="math inline">\(\displaystyle S=\frac{abc}{4R}\)</span></p>
-<p><span class="math inline">\(\displaystyle S=\frac{1}{2} Cr\)</span></p>
-<p><span class="math inline">\(\displaystyle S=\sqrt{p( p-a)( p-b)( p-c)}\)</span></p>
-<h2 id="实际问题中常见的概念">实际问题中常见的概念</h2>
+<h2 id="面积公式"><a class="markdownIt-Anchor" href="#面积公式"></a> 面积公式</h2>
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mstyle scriptlevel="0" displaystyle="true"><mi>S</mi><mo>=</mo><mfrac><mrow><mi>a</mi><mi>h</mi></mrow><mn>2</mn></mfrac></mstyle></mrow><annotation encoding="application/x-tex">\displaystyle S=\frac{ah}{2}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.05764em;">S</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.05744em;vertical-align:-0.686em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.37144em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">2</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault">a</span><span class="mord mathdefault">h</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></p>
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mstyle scriptlevel="0" displaystyle="true"><mi>S</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>a</mi><mi>b</mi><mi>sin</mi><mo>⁡</mo><mi>C</mi></mstyle></mrow><annotation encoding="application/x-tex">\displaystyle S=\frac{1}{2} ab\sin C</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.05764em;">S</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.00744em;vertical-align:-0.686em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.32144em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">2</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mord mathdefault">a</span><span class="mord mathdefault">b</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mop">sin</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.07153em;">C</span></span></span></span></p>
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mstyle scriptlevel="0" displaystyle="true"><mi>S</mi><mo>=</mo><mn>2</mn><msup><mi>R</mi><mn>2</mn></msup><mi>sin</mi><mo>⁡</mo><mi>A</mi><mi>sin</mi><mo>⁡</mo><mi>B</mi><mi>sin</mi><mo>⁡</mo><mi>C</mi></mstyle></mrow><annotation encoding="application/x-tex">\displaystyle S=2R^{2}\sin A\sin B\sin C</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.05764em;">S</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8641079999999999em;vertical-align:0em;"></span><span class="mord">2</span><span class="mord"><span class="mord mathdefault" style="margin-right:0.00773em;">R</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8641079999999999em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mop">sin</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">A</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mop">sin</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.05017em;">B</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mop">sin</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.07153em;">C</span></span></span></span></p>
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mstyle scriptlevel="0" displaystyle="true"><mi>S</mi><mo>=</mo><mfrac><mrow><mi>a</mi><mi>b</mi><mi>c</mi></mrow><mrow><mn>4</mn><mi>R</mi></mrow></mfrac></mstyle></mrow><annotation encoding="application/x-tex">\displaystyle S=\frac{abc}{4R}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.05764em;">S</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.05744em;vertical-align:-0.686em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.37144em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">4</span><span class="mord mathdefault" style="margin-right:0.00773em;">R</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault">a</span><span class="mord mathdefault">b</span><span class="mord mathdefault">c</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></p>
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mstyle scriptlevel="0" displaystyle="true"><mi>S</mi><mo>=</mo><mfrac><mn>1</mn><mn>2</mn></mfrac><mi>C</mi><mi>r</mi></mstyle></mrow><annotation encoding="application/x-tex">\displaystyle S=\frac{1}{2} Cr</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.05764em;">S</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.00744em;vertical-align:-0.686em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.32144em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">2</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mord mathdefault" style="margin-right:0.07153em;">C</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span></span></span></span></p>
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mstyle scriptlevel="0" displaystyle="true"><mi>S</mi><mo>=</mo><msqrt><mrow><mi>p</mi><mo stretchy="false">(</mo><mi>p</mi><mo>−</mo><mi>a</mi><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mi>p</mi><mo>−</mo><mi>b</mi><mo stretchy="false">)</mo><mo stretchy="false">(</mo><mi>p</mi><mo>−</mo><mi>c</mi><mo stretchy="false">)</mo></mrow></msqrt></mstyle></mrow><annotation encoding="application/x-tex">\displaystyle S=\sqrt{p( p-a)( p-b)( p-c)}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.05764em;">S</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.24em;vertical-align:-0.25612499999999994em;"></span><span class="mord sqrt"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.983875em;"><span class="svg-align" style="top:-3.2em;"><span class="pstrut" style="height:3.2em;"></span><span class="mord" style="padding-left:1em;"><span class="mord mathdefault">p</span><span class="mopen">(</span><span class="mord mathdefault">p</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord mathdefault">a</span><span class="mclose">)</span><span class="mopen">(</span><span class="mord mathdefault">p</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord mathdefault">b</span><span class="mclose">)</span><span class="mopen">(</span><span class="mord mathdefault">p</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord mathdefault">c</span><span class="mclose">)</span></span></span><span style="top:-2.9438750000000002em;"><span class="pstrut" style="height:3.2em;"></span><span class="hide-tail" style="min-width:1.02em;height:1.28em;"><svg width='400em' height='1.28em' viewBox='0 0 400000 1296' preserveAspectRatio='xMinYMin slice'><path d='M263,681c0.7,0,18,39.7,52,119c34,79.3,68.167,
+158.7,102.5,238c34.3,79.3,51.8,119.3,52.5,120c340,-704.7,510.7,-1060.3,512,-1067
+c4.7,-7.3,11,-11,19,-11H40000v40H1012.3s-271.3,567,-271.3,567c-38.7,80.7,-84,
+175,-136,283c-52,108,-89.167,185.3,-111.5,232c-22.3,46.7,-33.8,70.3,-34.5,71
+c-4.7,4.7,-12.3,7,-23,7s-12,-1,-12,-1s-109,-253,-109,-253c-72.7,-168,-109.3,
+-252,-110,-252c-10.7,8,-22,16.7,-34,26c-22,17.3,-33.3,26,-34,26s-26,-26,-26,-26
+s76,-59,76,-59s76,-60,76,-60z M1001 80H40000v40H1012z'/></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.25612499999999994em;"><span></span></span></span></span></span></span></span></span></p>
+<h2 id="实际问题中常见的概念"><a class="markdownIt-Anchor" href="#实际问题中常见的概念"></a> 实际问题中常见的概念</h2>
 <ul>
-<li><p>俯角、仰角：A看B的仰角=B看A的俯角</p></li>
-<li><p>方位角：注意哪里偏哪里，不要看错了</p></li>
+<li>
+<p>俯角、仰角：A看B的仰角=B看A的俯角</p>
+</li>
+<li>
+<p>方位角：注意哪里偏哪里，不要看错了</p>
+</li>
 </ul>
-<h2 id="常用方法注意事项">常用方法/注意事项</h2>
+<h2 id="常用方法注意事项"><a class="markdownIt-Anchor" href="#常用方法注意事项"></a> 常用方法/注意事项</h2>
 <ul>
 <li>用正弦定理和余弦定理在同一个三角形中构建方程</li>
 <li>用余弦定理在两个三角形中关于一条相等的边构造方程</li>
